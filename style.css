@@ -254,7 +254,7 @@ span{
     margin:1rem 0 3rem;
 }
 /*project section*/
-.projects-box{
+.project-box{
     background-size:cover;
     display:flex;
     justify-content:center;
@@ -262,16 +262,121 @@ span{
     flex-direction:column;
 }
 
-.projects-heading{
+.project-heading{
     margin-bottom:4rem;
 }
 
-.projects-box img{
+.project-box img{
     width:15rem;
     border-radius:50%;
     border:3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns:repear(6,1fr);
+    gap:3res
+}
+.project-item{
+    min-height:450px;
+    max-width:450px;
+    background:var(--bg-color);
+    border:0.3rem solid var(--bg-color);
+    border-radius:2rem;
+    margin:0.2rem;
+    padding:20px 20px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.project-item:hover{
+    border-color:var(--main-color);
+    transform:scale(1.02);
+}
+
+.project-item h2{
+    font-size: 3rem;
+}
+
+.project-item p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#star {
+    color:gold;
+    font-size:2rem;
+}
+
+/* Contact Section Code--*/
+
+.contact{
+    background: var(--bg-color);
+}
+
+.contact .heading{
+    text-align: center;
+}
+
+.contact h2{
+    margin-bottom:3rem;
+    color:var(--main-color);
+}
+
+.contact form{
+    max-width: 80rem;
+    margin:1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color:var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border:0.25rem solid var(--main-color);
+    margin:0.7rem 0;
+    resize: none;
+}
+
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+}
+
+.contact from .btn{
+    margin-top:2rem;
+}
+ 
+/*--footer section code --*/
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--snd-bg-color);
+}
 
 
-
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color:var(--main-color);
 }
